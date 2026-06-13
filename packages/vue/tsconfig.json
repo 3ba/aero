@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "types": ["node"],
+    "noEmit": true,
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src", "env.d.ts", "vite.config.ts"]
+}
