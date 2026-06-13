@@ -1,0 +1,417 @@
+
+:root {
+  --aero-sky-50: #e6f7ff;
+  --aero-sky-100: #b9e8ff;
+  --aero-sky-300: #5fcdff;
+  --aero-sky-500: #00bfff;
+  --aero-sky-700: #0284c7;
+  --aero-cyan: #00f0ff;
+  --aero-aqua: #4de8d4;
+  --aero-green: #39ff8c;
+  --aero-grass: #22c55e;
+  --aero-leaf: #15803d;
+  --aero-sun: #fde68a;
+
+  --aero-font: "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+  --glass-blur: 22px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* set morning as default theme */
+  --t-bg:
+    radial-gradient(ellipse 70% 30% at 30% 12%, rgba(255, 255, 255, 0.5), transparent 70%),
+    radial-gradient(ellipse at 85% 110%, #4ade80 0%, transparent 55%),
+    linear-gradient(180deg, #bfe7fd 0%, #38bdf8 45%, #34c389 85%, #22a35e 100%);
+  --t-text: #ffffff;
+  --t-text-dim: rgba(255, 255, 255, 0.8);
+  --t-ink: #06283d; /* dark text on light glass */
+  --t-accent: #0ea5e9;
+  --t-accent-2: #22d3ee;
+  --t-positive: #22c55e;
+  --t-glow: rgba(0, 191, 255, 0.5);
+  --t-glass-tint: rgba(255, 255, 255, 0.18);
+  --t-glass-tint-strong: rgba(255, 255, 255, 0.34);
+  --t-glass-tint-faint: rgba(255, 255, 255, 0.08);
+  --t-glass-border: rgba(255, 255, 255, 0.55);
+  --t-shadow: rgba(0, 110, 180, 0.3);
+  --t-track: rgba(0, 40, 80, 0.25); /* recessed control wells */
+  --t-celestial: radial-gradient(circle at 35% 30%, #ffffff, #fef3c7 45%, rgba(253, 224, 71, 0.65) 70%, transparent 75%);
+}
+
+/* themes (sky based on local time) */
+.theme-sunrise {
+  --t-bg:
+    radial-gradient(ellipse 80% 45% at 50% 92%, rgba(255, 214, 140, 0.85), rgba(255, 160, 120, 0.35) 55%, transparent 75%),
+    radial-gradient(ellipse 60% 25% at 30% 30%, rgba(255, 255, 255, 0.22), transparent 70%),
+    linear-gradient(180deg, #7e98cf 0%, #b395c4 26%, #e8a3b4 48%, #f8bd95 70%, #fbd9a2 86%, #cfe0a0 100%);
+  --t-text: #ffffff;
+  --t-text-dim: rgba(255, 255, 255, 0.82);
+  --t-ink: #4a2335;
+  --t-accent: #fb7d3c;
+  --t-accent-2: #f472b6;
+  --t-positive: #84cc16;
+  --t-glow: rgba(251, 146, 60, 0.5);
+  --t-glass-tint: rgba(255, 240, 228, 0.2);
+  --t-glass-tint-strong: rgba(255, 240, 228, 0.36);
+  --t-glass-tint-faint: rgba(255, 240, 228, 0.09);
+  --t-glass-border: rgba(255, 235, 210, 0.6);
+  --t-shadow: rgba(140, 70, 90, 0.35);
+  --t-track: rgba(90, 40, 60, 0.28);
+  --t-celestial: radial-gradient(circle at 50% 45%, #fff7df, #fdcf6e 45%, rgba(251, 146, 60, 0.75) 72%, transparent 78%);
+}
+
+.theme-morning {
+  --t-bg:
+    radial-gradient(ellipse 70% 30% at 30% 12%, rgba(255, 255, 255, 0.5), transparent 70%),
+    radial-gradient(ellipse at 85% 110%, #4ade80 0%, transparent 55%),
+    linear-gradient(180deg, #bfe7fd 0%, #38bdf8 45%, #34c389 85%, #22a35e 100%);
+  --t-text: #ffffff;
+  --t-text-dim: rgba(255, 255, 255, 0.8);
+  --t-ink: #06283d;
+  --t-accent: #0ea5e9;
+  --t-accent-2: #22d3ee;
+  --t-positive: #22c55e;
+  --t-glow: rgba(0, 191, 255, 0.5);
+  --t-glass-tint: rgba(255, 255, 255, 0.18);
+  --t-glass-tint-strong: rgba(255, 255, 255, 0.34);
+  --t-glass-tint-faint: rgba(255, 255, 255, 0.08);
+  --t-glass-border: rgba(255, 255, 255, 0.55);
+  --t-shadow: rgba(0, 110, 180, 0.3);
+  --t-track: rgba(0, 40, 80, 0.25);
+  --t-celestial: radial-gradient(circle at 35% 30%, #ffffff, #fef3c7 45%, rgba(253, 224, 71, 0.65) 70%, transparent 75%);
+}
+
+.theme-noon {
+  --t-bg:
+    radial-gradient(ellipse 60% 28% at 50% 0%, rgba(255, 255, 255, 0.55), transparent 70%),
+    radial-gradient(ellipse 90% 50% at 20% 115%, #166534 0%, transparent 60%),
+    radial-gradient(ellipse 90% 45% at 85% 112%, #15803d 0%, transparent 55%),
+    linear-gradient(180deg, #8fdcfc 0%, #a8e878 34%, #4ade80 62%, #1f9e54 100%);
+  --t-text: #ffffff;
+  --t-text-dim: rgba(255, 255, 255, 0.84);
+  --t-ink: #11331c;
+  --t-accent: #16a34a;
+  --t-accent-2: #84cc16;
+  --t-positive: #39ff8c;
+  --t-glow: rgba(57, 255, 140, 0.55);
+  --t-glass-tint: rgba(240, 255, 240, 0.2);
+  --t-glass-tint-strong: rgba(240, 255, 240, 0.36);
+  --t-glass-tint-faint: rgba(240, 255, 240, 0.09);
+  --t-glass-border: rgba(235, 255, 225, 0.6);
+  --t-shadow: rgba(15, 100, 50, 0.35);
+  --t-track: rgba(10, 70, 35, 0.3);
+  --t-celestial: radial-gradient(circle at 50% 40%, #ffffff, #fefce8 40%, rgba(254, 240, 138, 0.7) 68%, transparent 75%);
+}
+
+.theme-dusk {
+  --t-bg:
+    radial-gradient(ellipse 75% 40% at 50% 88%, rgba(251, 146, 60, 0.7), rgba(217, 70, 120, 0.25) 60%, transparent 78%),
+    radial-gradient(ellipse 50% 22% at 75% 25%, rgba(192, 132, 252, 0.25), transparent 70%),
+    linear-gradient(180deg, #312e6e 0%, #5b4292 30%, #9c4d96 52%, #e0608d 70%, #f59e4b 88%, #5c3a40 100%);
+  --t-text: #ffffff;
+  --t-text-dim: rgba(255, 255, 255, 0.8);
+  --t-ink: #3b1d3f;
+  --t-accent: #f59e0b;
+  --t-accent-2: #c084fc;
+  --t-positive: #4ade80;
+  --t-glow: rgba(245, 158, 11, 0.5);
+  --t-glass-tint: rgba(255, 225, 235, 0.16);
+  --t-glass-tint-strong: rgba(255, 225, 235, 0.3);
+  --t-glass-tint-faint: rgba(255, 225, 235, 0.08);
+  --t-glass-border: rgba(255, 215, 200, 0.5);
+  --t-shadow: rgba(80, 35, 90, 0.45);
+  --t-track: rgba(50, 20, 60, 0.35);
+  --t-celestial: radial-gradient(circle at 50% 55%, #fff3d6, #fbbf24 45%, rgba(249, 115, 22, 0.8) 72%, transparent 78%);
+}
+
+.theme-night {
+  --t-bg:
+    radial-gradient(ellipse 70% 40% at 75% 10%, rgba(57, 255, 140, 0.14), transparent 60%),
+    radial-gradient(ellipse 60% 35% at 20% 25%, rgba(0, 240, 255, 0.12), transparent 60%),
+    radial-gradient(ellipse 90% 40% at 50% 115%, #0d3b33 0%, transparent 65%),
+    linear-gradient(180deg, #040b1e 0%, #0a1b3d 42%, #10304e 78%, #0c2e38 100%);
+  --t-text: #eaf6ff;
+  --t-text-dim: rgba(234, 246, 255, 0.72);
+  --t-ink: #dff3ff; /* glass stays dark at night */
+  --t-accent: #22d3ee;
+  --t-accent-2: #39ff8c;
+  --t-positive: #39ff8c;
+  --t-glow: rgba(0, 240, 255, 0.45);
+  --t-glass-tint: rgba(120, 200, 255, 0.1);
+  --t-glass-tint-strong: rgba(120, 200, 255, 0.18);
+  --t-glass-tint-faint: rgba(120, 200, 255, 0.05);
+  --t-glass-border: rgba(160, 225, 255, 0.35);
+  --t-shadow: rgba(0, 10, 30, 0.6);
+  --t-track: rgba(0, 15, 40, 0.55);
+  --t-celestial: radial-gradient(circle at 38% 35%, #ffffff, #dbeafe 45%, rgba(147, 197, 253, 0.55) 70%, transparent 76%);
+}
+
+.aero-sky {
+  position: relative;
+  background: var(--t-bg);
+  color: var(--t-text);
+  font-family: var(--aero-font);
+  overflow: hidden;
+}
+
+.aero-celestial {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--t-celestial);
+  pointer-events: none;
+  filter: saturate(110%);
+}
+
+.aero-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.aero-star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+  animation: aero-twinkle 3.5s ease-in-out infinite;
+}
+
+@keyframes aero-twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.aero-bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.aero-bubble {
+  position: absolute;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.28) 18%, rgba(255, 255, 255, 0.1) 45%, transparent 80%),
+    radial-gradient(circle at 70% 75%, var(--t-glow), transparent 60%);
+  border: 1px solid var(--t-glass-border);
+  box-shadow:
+    inset 0 0 12px rgba(255, 255, 255, 0.4),
+    0 6px 18px var(--t-shadow);
+  animation: aero-float 14s ease-in-out infinite;
+}
+
+.aero-bubble::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 14%;
+  width: 38%;
+  height: 28%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.95), transparent 70%);
+  filter: blur(1px);
+}
+
+@keyframes aero-float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  33% {
+    transform: translateY(-22px) translateX(10px) scale(1.04);
+  }
+  66% {
+    transform: translateY(8px) translateX(-12px) scale(0.97);
+  }
+}
+
+.glass {
+  position: relative;
+  background: var(--t-glass-tint);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  border: 1px solid var(--t-glass-border);
+  box-shadow:
+    0 8px 32px var(--t-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.12);
+  border-radius: var(--r-lg);
+  color: var(--t-text);
+  transition:
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease),
+    background 0.25s var(--ease);
+  isolation: isolate;
+}
+
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.14) 45%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glass > * {
+  position: relative;
+  z-index: 1;
+}
+
+.glass:hover {
+  box-shadow:
+    0 14px 40px var(--t-shadow),
+    0 0 24px var(--t-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.glass-strong {
+  background: var(--t-glass-tint-strong);
+}
+
+.glass-faint {
+  background: var(--t-glass-tint-faint);
+}
+
+.glass-pill {
+  border-radius: var(--r-pill);
+}
+
+.glass-static {
+  transition: none;
+}
+
+.glass-static:hover {
+  transform: none;
+}
+
+.glass-lift:hover {
+  transform: translateY(-2px);
+}
+
+.aero-orb {
+  position: relative;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.2) 22%, transparent 55%),
+    radial-gradient(circle at 50% 60%, var(--orb-tint, var(--t-accent)), color-mix(in oklab, var(--orb-tint, var(--t-accent)) 55%, #002438));
+  box-shadow:
+    inset 0 0 14px rgba(255, 255, 255, 0.35),
+    inset 0 -8px 18px rgba(0, 30, 60, 0.35),
+    0 8px 22px var(--t-shadow);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.aero-orb::after {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 20%;
+  width: 42%;
+  height: 30%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.95), transparent 70%);
+  filter: blur(0.5px);
+}
+
+.aero-orb-green {
+  --orb-tint: #39ff8c;
+}
+
+.aero-orb-sky {
+  --orb-tint: #00bfff;
+}
+
+.aero-orb-cyan {
+  --orb-tint: #00f0ff;
+}
+
+.aero-orb-sun {
+  --orb-tint: #fde047;
+}
+
+.aero-orb-rose {
+  --orb-tint: #fb7185;
+}
+
+.aero-orb-violet {
+  --orb-tint: #a78bfa;
+}
+
+.aero-orb-accent {
+  --orb-tint: var(--t-accent);
+}
+
+.aero-text-shadow {
+  text-shadow: 0 1px 2px var(--t-shadow);
+}
+
+.aero-ink {
+  color: var(--t-ink);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.theme-night .aero-ink {
+  text-shadow: 0 1px 2px rgba(0, 10, 30, 0.6);
+}
+
+.aero-divider {
+  height: 1px;
+  border: none;
+  margin: 0;
+  background: linear-gradient(90deg, transparent, var(--t-glass-border), transparent);
+}
+
+.aero-glow {
+  box-shadow: 0 0 24px var(--t-glow);
+}
+
+.aero-scroll::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.aero-scroll::-webkit-scrollbar-track {
+  background: var(--t-track);
+  border-radius: 999px;
+}
+
+.aero-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--t-accent), white 45%), var(--t-accent));
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aero-bubble,
+  .aero-star,
+  .aero-progress-fill::after,
+  .aero-spinner {
+    animation: none !important;
+  }
+  .glass,
+  .aero-btn {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@aero/styles",
+  "version": "2.0.0",
+  "description": "Frutiger Aero theme engine and component styles (framework-agnostic CSS).",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./src/index.css",
+  "style": "./src/index.css",
+  "exports": {
+    ".": "./src/index.css",
+    "./theme.css": "./src/theme.css",
+    "./components.css": "./src/components.css",
+    "./index.css": "./src/index.css"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "node -e \"process.stdout.write('css is shipped as source, nothing to build\\n')\"",
+    "typecheck": "node -e \"0\""
+  },
+  "keywords": [
+    "frutiger-aero",
+    "css",
+    "theme",
+    "glassmorphism"
+  ]
+}
