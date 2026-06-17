@@ -1,7 +1,7 @@
 {
   "name": "frutiger-aero",
   "version": "2.0.0",
-  "private": false,
+  "private": true,
   "description": "Frutiger Aero; a glassy, sky-themed component pack for React, Next.js and Vue.",
   "license": "MIT",
   "type": "module",

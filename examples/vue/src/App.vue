@@ -19,8 +19,8 @@ import {
   MediaPlayer,
   Stack,
   SectionLabel,
-} from "@aero/vue";
-import type { AeroThemeSetting } from "@aero/vue";
+} from "@3ba/vue";
+import type { AeroThemeSetting } from "@3ba/vue";
 
 const theme = ref<AeroThemeSetting>("morning");
 const bubbles = ref(true);

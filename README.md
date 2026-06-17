@@ -9,11 +9,11 @@ frosted glass, glossy orbs, drifting bubbles and time-of-day skies. Ships for
 
 ## Packages
 
-| Package          | Description                                              |
-| ---------------- | -------------------------------------------------------- |
-| `@aero/styles`   | CSS theme engine + component styles                      |
-| `@aero/react`    | React components (works in Nextjs)                       |
-| `@aero/vue`      | Vue 3 components                                         |
+| Package        | Description                         |
+| -------------- | ----------------------------------- |
+| `@3ba/styles`  | CSS theme engine + component styles |
+| `@3ba/react`   | React components (works in Nextjs)  |
+| `@3ba/vue`     | Vue 3 components                    |
 
 The styles package is used for both UI packages, install it once and import
 the stylesheet at the root of your app/project.
@@ -23,12 +23,12 @@ the stylesheet at the root of your app/project.
 ### React / Next.js
 
 ```bash
-pnpm add @aero/react @aero/styles
+pnpm add @3ba/react @3ba/styles
 ```
 
 ```tsx
-import "@aero/styles";
-import { AeroThemeProvider, AeroSky, Card, Btn } from "@aero/react";
+import "@3ba/styles";
+import { AeroThemeProvider, AeroSky, Card, Btn } from "@3ba/react";
 
 export default function App() {
   return (
@@ -48,13 +48,13 @@ export default function App() {
 ### Vue 3
 
 ```bash
-pnpm add @aero/vue @aero/styles
+pnpm add @3ba/vue @3ba/styles
 ```
 
 ```vue
 <script setup lang="ts">
-import "@aero/styles";
-import { AeroThemeProvider, AeroSky, Card, Btn } from "@aero/vue";
+import "@3ba/styles";
+import { AeroThemeProvider, AeroSky, Card, Btn } from "@3ba/vue";
 </script>
 
 <template>

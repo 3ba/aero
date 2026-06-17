@@ -21,7 +21,7 @@ import {
   Stack,
   SectionLabel,
   type AeroThemeSetting,
-} from "@aero/react";
+} from "@3ba/react";
 
 export default function Page() {
   const [theme, setTheme] = useState<AeroThemeSetting>("dusk");

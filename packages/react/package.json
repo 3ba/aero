@@ -1,9 +1,12 @@
 {
-  "name": "@aero/react",
+  "name": "@3ba/react",
   "version": "2.0.0",
   "description": "Frutiger Aero components for React and Next.js, fully typed.",
   "license": "MIT",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -14,7 +17,7 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./styles.css": "./node_modules/@aero/styles/src/index.css"
+    "./styles.css": "./node_modules/@3ba/styles/src/index.css"
   },
   "files": [
     "dist",
@@ -30,7 +33,7 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@aero/styles": "workspace:*"
+    "@3ba/styles": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",

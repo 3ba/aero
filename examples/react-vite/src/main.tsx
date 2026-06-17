@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "@aero/styles";
+import "@3ba/styles";
 import { App } from "./App";
 
 createRoot(document.getElementById("root")!).render(

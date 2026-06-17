@@ -1,9 +1,12 @@
 {
-  "name": "@aero/vue",
+  "name": "@3ba/vue",
   "version": "2.0.0",
   "description": "Frutiger Aero components for Vue 3.",
   "license": "MIT",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -14,7 +17,7 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./styles.css": "./node_modules/@aero/styles/src/index.css"
+    "./styles.css": "./node_modules/@3ba/styles/src/index.css"
   },
   "files": [
     "dist",
@@ -29,7 +32,7 @@
     "vue": ">=3.3"
   },
   "dependencies": {
-    "@aero/styles": "workspace:*"
+    "@3ba/styles": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

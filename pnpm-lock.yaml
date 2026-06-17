@@ -10,10 +10,10 @@ importers:
 
   examples/nextjs:
     dependencies:
-      '@aero/react':
+      '@3ba/react':
         specifier: workspace:*
         version: link:../../packages/react
-      '@aero/styles':
+      '@3ba/styles':
         specifier: workspace:*
         version: link:../../packages/styles
       next:
@@ -41,10 +41,10 @@ importers:
 
   examples/react-vite:
     dependencies:
-      '@aero/react':
+      '@3ba/react':
         specifier: workspace:*
         version: link:../../packages/react
-      '@aero/styles':
+      '@3ba/styles':
         specifier: workspace:*
         version: link:../../packages/styles
       react:
@@ -72,10 +72,10 @@ importers:
 
   examples/vue:
     dependencies:
-      '@aero/styles':
+      '@3ba/styles':
         specifier: workspace:*
         version: link:../../packages/styles
-      '@aero/vue':
+      '@3ba/vue':
         specifier: workspace:*
         version: link:../../packages/vue
       vue:
@@ -97,7 +97,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@aero/styles':
+      '@3ba/styles':
         specifier: workspace:*
         version: link:../styles
     devDependencies:
@@ -124,7 +124,7 @@ importers:
 
   packages/vue:
     dependencies:
-      '@aero/styles':
+      '@3ba/styles':
         specifier: workspace:*
         version: link:../styles
     devDependencies:

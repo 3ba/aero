@@ -19,7 +19,7 @@ import {
   Stack,
   SectionLabel,
   type AeroThemeSetting,
-} from "@aero/react";
+} from "@3ba/react";
 
 export function App() {
   const [theme, setTheme] = useState<AeroThemeSetting>("morning");

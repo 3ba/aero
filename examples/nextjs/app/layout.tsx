@@ -1,4 +1,4 @@
-import "@aero/styles";
+import "@3ba/styles";
 import type { ReactNode } from "react";
 
 export const metadata = {

@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import "@aero/styles";
+import "@3ba/styles";
 import App from "./App.vue";
 
 createApp(App).mount("#app");
